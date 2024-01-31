@@ -12,6 +12,7 @@ from azure.core.credentials import AzureKeyCredential
 from azure.ai.formrecognizer import DocumentAnalysisClient
 import regex as re
 import json
+import os
 
 """
  For more information:
