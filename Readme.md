@@ -12,7 +12,7 @@
 Here are some  details that are useful:
 * The data is unstructured pdf. 
 * images.py fetches images from pdf.
-* notes.py gives fetches notes from pdf
+* notes.py fetches notes from pdf
 * data.json is the final output in which data is shown
 * section.py is used to fetch section,figure and tables.
 
