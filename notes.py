@@ -1,3 +1,7 @@
+"""
+Code sample fetches Notes.
+"""
+
 from PyPDF2 import PdfReader
 import re
 import json
@@ -45,8 +49,4 @@ with open('data.json', 'w') as json_file:
     json.dump(json_dict, json_file, indent=4)
 
 
-
-
-
-# Step 2: Update the data with new informatio
 

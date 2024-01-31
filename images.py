@@ -1,3 +1,8 @@
+"""
+Code sample fetches Images from the pdf.
+"""
+
+
 import fitz
 import os
 from PIL import Image

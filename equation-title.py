@@ -14,17 +14,13 @@ import regex as re
 import json
 
 """
-Remember to remove the key from your code when you're done, and never post it publicly. For production, use
-secure methods to store and access your credentials. For more information, see 
+ For more information:
 https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-security?tabs=command-line%2Ccsharp#environment-variables-and-application-configuration
 """
 endpoint =  os.environ["endpoint"]
 key =  os.environ["azformkey"]
 
-def format_bounding_box(bounding_box):
-    if not bounding_box:
-        return "N/A"
-    return ", ".join(["[{}, {}]".format(p.x, p.y) for p in bounding_box])
+
 
 def analyze_read():
     # sample document
@@ -37,11 +33,12 @@ def analyze_read():
     except FileNotFoundError:
         # If the file doesn't exist, we'll start with an empty dictionary
         json_dict = {}
-
+#Create client for the App
     client = DocumentAnalysisClient(
         endpoint=endpoint, credential=AzureKeyCredential(key)
     )
 
+# Fetch the pdf details
     with open("CASI_Assignment.pdf", "rb") as pdf:
         poller = client.begin_analyze_document("prebuilt-layout", pdf)
         result = poller.result()
@@ -89,7 +86,6 @@ def analyze_read():
 
     with open('data.json', 'w') as json_file:
         json.dump(json_dict, json_file, indent=4)
-    # Find title
 
 if __name__ == "__main__":
     analyze_read()
