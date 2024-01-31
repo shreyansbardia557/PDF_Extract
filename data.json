@@ -1,0 +1,41 @@
+{
+    "Section": [
+        "Section 1 1.1 A Regression Example",
+        "Section 2 1.2 Hypothesis Testing",
+        "Section 3 3.01",
+        "Section 4 1.3 Notes"
+    ],
+    "Figures": [
+        "Figure 1.1 concerns a study of kidney function. Data points.x i; yi/have",
+        "Figure 1.2 Local polynomial lowess(x,y,1/3) \ufb01t to the",
+        "Figure 1.3 25 bootstrap replications of lowess(x,y,1/3) .",
+        "Figure 1.4 Scores for gene 136, leukemia data. Top ALL",
+        "Figure 1.5 Two-samplet-statistics for 7128 genes, leukemia"
+    ],
+    "Tables": [
+        "Table 1.1 shows estimate 1.29 at age20, down to\ue0003:43at age80.",
+        "Table 1.1 Regression analysis of the kidney data; (1) linear regression"
+    ],
+    "Notes": [
+        "[p. 6] lowess was devised by William Cleveland (Cleveland, 1981) and\nis available in the R statistical computing language."
+    ],
+    "Equations": [
+        [
+            "averaging",
+            "1.1"
+        ],
+        [
+            "se",
+            "1.2"
+        ],
+        [
+            "from",
+            "1.6"
+        ],
+        [
+            "difference",
+            "1.5"
+        ]
+    ],
+    "Title": "Algorithms and Inference"
+}
